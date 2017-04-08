@@ -20,7 +20,7 @@ window.addEventListener("scroll", function(){
 	if(currentScroll<=3){
 		document.getElementById("nav-header").classList.remove("solid");
 		document.getElementById("nav-header").classList.remove("header-in");
-	}	
+	}
 
 }
 	lastScrollTop = currentScroll;
@@ -34,7 +34,7 @@ var codersLaboratoria = ["Fiorella Quispe","Lourdes Vilchez","Rossmery Maldonado
 "Nakarid Jave","Angie Cóndor","Maricarmen Rojas","Ariana Cabana","Flor Condori","Mitch Rodríguez","Naomi Villanueva",
 "Mari Castillo","Miriam Peralta","Karin Alejo","Liliana Peña","Ruth Salvador","Maribel","Wendy Reyes","Cinthia",
 "Maria Grecia Cutipa","Ana Durand","Glisse Jorge","Neiza Nuñez","Sandra Solorzano"];
-	
+
 var divGeneral = document.getElementById("imagenes");
 
 for(var i=1; i<=54; i++){
@@ -45,12 +45,13 @@ for(var i=1; i<=54; i++){
 	img.setAttribute("src", "assets/img/students/"+ i +".png");
 
 	div.classList.add("fotoLaboratoria");
-	span.classList.add("color");
-	
+	img.classList.add("color");
+	span.setAttribute("class", "span-caption");
+
 	div.appendChild(img);
 	span.innerText = codersLaboratoria[i-1];
 	div.appendChild(span); //div>img
-	
+
 	divGeneral.appendChild(div); //imagenes>div>img
 
 }

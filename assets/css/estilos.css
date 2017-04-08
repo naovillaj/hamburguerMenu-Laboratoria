@@ -220,7 +220,7 @@ nav.header-in{
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 20px auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
-  animation: 
+  animation:
   typing 3.5s steps(40, end),
   blink-caret .75s step-end infinite;
   color: purple;
@@ -242,7 +242,7 @@ nav.header-in{
 }
 
 h2{
-	
+
 	text-align: center;
 	position: relative;
 	margin-top: 100px;
@@ -259,6 +259,9 @@ h2{
 	line-height: 0;
 
 }
+
+
+/*
 .overlay {
 	position: absolute;
 	top: 0;
@@ -268,10 +271,11 @@ h2{
 	margin-top: 400px;
 }
 
+
 .overlay:hover {
 	background: rgba(249, 169, 26,0.7);
-	
-}
+
+}*/
 
 .fotoLaboratoria{
 	width: 33.33%;
@@ -284,29 +288,23 @@ h2{
 	width: 100%;
 	height: 400px;
 	position: absolute;
+
 }
-
-
-
 
 .fotoLaboratoria:hover img {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+
 }
+
+
 
 span {
   visibility: hidden;
-
-
 }
 
-.fotoLaboratoria:hover {
-  background-color: rgba(250, 224, 0, 0.6);
-}
-
-
-.fotoLaboratoria:hover span {
+.fotoLaboratoria:hover .span-caption {
     visibility: visible;
     text-align: center;
     position: absolute;
@@ -315,9 +313,31 @@ span {
     font-size: x-large;
     color: white;
     font-family: : relaway;
+		background-color: rgba(250, 224, 0, 0.6) !important;
 
 
- }   
+ }
+
+
+
+
+ /*.fotoLaboratoria:hover span{
+ 	opacity: 1;
+
+ 	position: relative;
+
+ }*/
+
+ footer{
+	width: 180px;
+  height:auto;
+  margin: 0 auto;
+  margin-top: 300px;
+	background: black;
+	display: block;
+ }
+
+
 
 /*#imagenes-overlay {
   position: absolute;
@@ -330,4 +350,3 @@ span {
 
 
 }*/
-
